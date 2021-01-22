@@ -1,0 +1,19 @@
+Michael BRranigan
+Lab3
+EIGRP:
+
+Command:
+-en
+	-conf t
+	-router eigrp #(1)
+		-network xx.xx.xx.xx
+		-passive-interface ___ (default)
+		//Passive-interface allows you to stop recieving hello packets
+		//This is good because of redunincy; chose interface 
+		(-no auto-summary)
+		//set to default
+		
+Test: 
+- en 
+	-show ip eigrp topology
+	
